@@ -1,0 +1,39 @@
+.nav-container {
+    width: 30%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(34, 125, 165, 0.52);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+  
+    .nav-element{
+      width: 100%;
+      text-decoration: none;
+      color: rgba(34, 125, 165, 1);
+      // font-family: "Bebas Neue", sans-serif;
+      height: 54px;
+      border: none;
+      text-align: start;
+      background-color: rgba(230, 236, 245, 1);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+
+  
+      &:hover {
+        background-color: rgba(200, 220, 240, 1);
+      }
+    }
+  }
+
+  @media (max-width:992px) {
+    .nav-container{
+      width: 100%;
+    }
+  }

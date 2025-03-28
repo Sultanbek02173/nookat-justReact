@@ -1,0 +1,133 @@
+.aiyl-con{
+    width: 100%;
+    
+    .info{
+        width:100%;
+        color: #227DA5;
+
+        .info-title{
+            // font-family: 'Bebas Neue';
+            font-size: 44.97px;
+            font-weight: 700;
+            line-height: 44.97px;
+            text-align: left;
+            text-decoration-skip-ink: none;
+            margin-bottom: 10px;
+        }
+
+        .slider{
+            margin-top: 80px;
+        }
+    }
+    
+    .info-text .text {
+        font-family: 'SF Pro Display';
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26.25px;
+        text-align: left;
+        text-decoration-skip-ink: none;
+        text-decoration: none;
+    }     
+    
+}
+
+@media (max-width: 1400px) {
+    .text-con{
+        .info-image{
+            padding-bottom: 190px;
+        }
+    }
+
+    .aiyl-con .info p{
+        font-size: 32px;
+    }
+
+    .aiyl-con .info-text p{
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .text-con{
+        
+        .info-image{
+            padding-bottom: 130px;
+        }
+    }
+
+    .aiyl-con .info-text .text{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .text-con{
+        margin: 0;
+        padding: 0;
+
+        .info-image{
+            height: 230px;
+            margin-bottom: 20px;
+
+            img{
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        } 
+        .info-image{
+            padding-bottom: 50px;
+        }
+
+        .aiyl-con .info-text .text{
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .text-con{
+        margin: 0;
+        padding: 0;
+
+        .info-image{
+            height: 200px;
+            margin-bottom: 20px;
+
+            img{
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        } 
+        .info-image{
+            padding-bottom: 50px;
+        }
+
+        .info p{
+            font-size: 18px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .info-image{
+        margin-top: 80px;
+
+        .image-text{
+            text-align: center;
+        }
+    }
+    .info-image p{
+        font-size: 30px;
+        text-align: center;
+    }
+    .navigation{
+        min-width: 100px;
+    }
+}
