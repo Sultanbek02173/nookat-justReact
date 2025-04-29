@@ -3,8 +3,6 @@ import HeaderMenu from './HeaderMenu';
 
 const HeaderBottom = () => {
 
- 
-
   return (
     <div 
     className='headerBottom'

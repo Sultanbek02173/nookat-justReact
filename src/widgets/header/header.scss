@@ -311,9 +311,11 @@
 
         .socials {
           background: #fff;
-          width: 130px;
+          width: 40px;
           margin-top: 10px;
           padding: 10px;
+          display: flex;
+          justify-content: center;
 
           div {
             background: #227DA5;

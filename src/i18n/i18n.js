@@ -13,22 +13,11 @@ i18n.use(initReactI18next).init({
             translation: ky
         }
      },
-    language:"ru",
-    fallbackLng:"ru",
+    language:"ky",
+    fallbackLng:"ky",
     interpolation: {
         escapeValue: false
     }
 })
-
-//     kg: {
-//       translation: kg,
-//     },
-//   },
-//   lng: "ru",
-//   fallbackLng: "ru",
-//   interpolation: {
-//     escapeValue: false,
-//   },
-// });
 
 export default i18n;

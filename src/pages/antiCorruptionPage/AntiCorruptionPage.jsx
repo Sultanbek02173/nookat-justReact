@@ -1,12 +1,13 @@
-import { BaseComponents } from '../../features';
+import { CardComponent } from '../../features';
 import './antiCorruptionPage.scss';
 import { useEffect, useState } from 'react';
 import i18n from '../../i18n/i18n';
 import axiosApi from '../../shared/api/AxiosApi';
+import { useTranslation } from 'react-i18next';
 
 export const AntiCorruptionPage = () => {
     const [catalogs, setCatalogs] = useState([]);
-
+    const {t} = useTranslation();
     const fetchProjects = () => {
         axiosApi('/api/v1/managers/catalog/')
         .then(({data}) => setCatalogs(data))
@@ -34,11 +35,11 @@ export const AntiCorruptionPage = () => {
     return (
         <div className='container'>
             <div className="viewing_projects">
-                <h1 className="viewing_projects-text">{catalogs[0]?.title}</h1>
+                <h1 className="viewing_projects-text">{t('АНТИКОРРУПЦИОННЫЕ МЕРОПРИЯТИЯ')}</h1>
                 {
                     catalogs.map((item) => (
                         <div className='projects-block' key={item.id} onClick={() => changeIndex(item.id)}>
-                            <BaseComponents item={item} index={index} changeIndex={changeIndex}/>
+                            <CardComponent image={item.image} title={item.title} description={item.description}/>
                         </div>
                     ))
                 }

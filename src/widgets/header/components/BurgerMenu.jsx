@@ -3,7 +3,7 @@ import "../header.scss";
 import "../burgermenu.scss";
 import { useTranslation } from 'react-i18next';
 import { FaLocationDot } from "react-icons/fa6";
-import { FaInstagram, FaPhoneAlt, FaTelegramPlane, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaPhoneAlt, FaTelegramPlane, FaYoutube } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdLanguage } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
@@ -86,19 +86,11 @@ const BurgerMenu = ({mainTextSpeech}) => {
             </div>
 
             <div className="socials">
-              <a href={setting ? setting[0]?.link_insta : ''} target="_blank"><div>
-                <FaInstagram />
-                
-              </div></a>
-              <div>
-                <a href={setting ? setting[0]?.link_telegram : ''} target="_blank"><FaTelegramPlane /></a>
-              </div>
-              <div>
-                <a href={`https://wa.me/${setting ? setting[0]?.link_watapp : ''}`} target="_blank"> <IoLogoWhatsapp /></a>
-              </div>
-              <div>
-                <a href={setting ? setting[0]?.link_youtube : ''} target="_blank"> <FaYoutube /></a>
-              </div>
+              <a href={setting ? setting[0]?.link_facebook : ''} target="_blank">
+                <div>
+                    <FaFacebookF />
+                </div>
+              </a>
             </div>
           </div>
         </div>
